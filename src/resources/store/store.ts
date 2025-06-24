@@ -43,7 +43,7 @@ export class Store extends APIResource {
   }
 }
 
-export type StoreInventoryResponse = Record<string, number>;
+export type StoreInventoryResponse = { [key: string]: number };
 
 export interface StoreCreateOrderParams {
   id?: number;
