@@ -145,27 +145,37 @@ export class Pets extends APIResource {
    *
    * @example
    * ```ts
-   * const apiResponse = await client.pets.uploadImage(0);
+   * const apiResponse = await client.pets.uploadImage(
+   *   0,
+   *   fs.createReadStream('path/to/file'),
+   *   fs.createReadStream('path/to/file'),
+   * );
    * ```
    */
   uploadImage(
     petId: number,
+    image: string | ArrayBufferView | ArrayBuffer | BlobLike,
     params?: PetUploadImageParams,
     options?: Core.RequestOptions,
   ): Core.APIPromise<APIResponse>;
-  uploadImage(petId: number, options?: Core.RequestOptions): Core.APIPromise<APIResponse>;
   uploadImage(
     petId: number,
+    image: string | ArrayBufferView | ArrayBuffer | BlobLike,
+    options?: Core.RequestOptions,
+  ): Core.APIPromise<APIResponse>;
+  uploadImage(
+    petId: number,
+    image: string | ArrayBufferView | ArrayBuffer | BlobLike,
     params?: PetUploadImageParams | Core.RequestOptions,
     options?: Core.RequestOptions,
   ): Core.APIPromise<APIResponse> {
     if (isRequestOptions(params)) {
-      return this.uploadImage(petId, undefined, params);
+      return this.uploadImage(petId, image, undefined, params);
     }
-    const { additionalMetadata, image } = params ?? {};
+    const { additionalMetadata } = params ?? {};
     return this._client.post(`/pet/${petId}/uploadImage`, {
       query: { additionalMetadata },
-      body: image,
+      body,
       ...options,
       headers: { 'Content-Type': 'application/octet-stream', ...options?.headers },
       __binaryRequest: true,
@@ -304,17 +314,7 @@ export interface PetUpdateByIDParams {
   status?: string;
 }
 
-export interface PetUploadImageParams {
-  /**
-   * Query param: Additional Metadata
-   */
-  additionalMetadata?: string;
-
-  /**
-   * Body param:
-   */
-  image?: string | ArrayBufferView | ArrayBuffer | BlobLike;
-}
+export type PetUploadImageParams = string | ArrayBufferView | ArrayBuffer | BlobLike;
 
 export declare namespace Pets {
   export {
