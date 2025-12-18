@@ -6,6 +6,7 @@ export {
   type APIResponse,
   type Category,
   type Pet,
+  type Tag,
   type PetFindByStatusResponse,
   type PetFindByTagsResponse,
   type PetCreateParams,
