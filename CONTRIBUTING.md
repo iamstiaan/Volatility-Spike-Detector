@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:iamstiaan/block-bqml-arima.git
+$ npm install git+ssh://git@github.com:iamstiaan/Volatility-Spike-Detector.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/iamstiaan/block-bqml-arima
-$ cd block-bqml-arima
+$ git clone https://www.github.com/iamstiaan/Volatility-Spike-Detector
+$ cd Volatility-Spike-Detector
 
 # With yarn
 $ yarn link
