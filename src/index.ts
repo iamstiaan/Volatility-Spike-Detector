@@ -200,6 +200,7 @@ export class Petstore extends Core.APIClient {
 Petstore.Pets = Pets;
 Petstore.Store = Store;
 Petstore.UserResource = UserResource;
+
 export declare namespace Petstore {
   export type RequestOptions = Core.RequestOptions;
 

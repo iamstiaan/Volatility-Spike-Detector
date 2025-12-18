@@ -193,7 +193,7 @@ describe('resource pets', () => {
       client.pets.uploadImage(
         0,
         await toFile(Buffer.from('# my file contents'), 'README.md'),
-        await toFile(Buffer.from('# my file contents'), 'README.md'),
+        { additionalMetadata: 'additionalMetadata' },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(Petstore.NotFoundError);
