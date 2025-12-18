@@ -19,6 +19,7 @@ import {
   PetUpdateParams,
   PetUploadImageParams,
   Pets,
+  Tag,
 } from './resources/pets';
 import {
   User,
@@ -210,6 +211,7 @@ export declare namespace Petstore {
     type APIResponse as APIResponse,
     type Category as Category,
     type Pet as Pet,
+    type Tag as Tag,
     type PetFindByStatusResponse as PetFindByStatusResponse,
     type PetFindByTagsResponse as PetFindByTagsResponse,
     type PetCreateParams as PetCreateParams,
