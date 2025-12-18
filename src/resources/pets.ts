@@ -190,6 +190,12 @@ export interface APIResponse {
   type?: string;
 }
 
+export interface Category {
+  id?: number;
+
+  name?: string;
+}
+
 export interface Pet {
   name: string;
 
@@ -197,7 +203,7 @@ export interface Pet {
 
   id?: number;
 
-  category?: Pet.Category;
+  category?: Category;
 
   /**
    * pet status in the store
@@ -208,12 +214,6 @@ export interface Pet {
 }
 
 export namespace Pet {
-  export interface Category {
-    id?: number;
-
-    name?: string;
-  }
-
   export interface Tag {
     id?: number;
 
@@ -232,7 +232,7 @@ export interface PetCreateParams {
 
   id?: number;
 
-  category?: PetCreateParams.Category;
+  category?: Category;
 
   /**
    * pet status in the store
@@ -243,12 +243,6 @@ export interface PetCreateParams {
 }
 
 export namespace PetCreateParams {
-  export interface Category {
-    id?: number;
-
-    name?: string;
-  }
-
   export interface Tag {
     id?: number;
 
@@ -263,7 +257,7 @@ export interface PetUpdateParams {
 
   id?: number;
 
-  category?: PetUpdateParams.Category;
+  category?: Category;
 
   /**
    * pet status in the store
@@ -274,12 +268,6 @@ export interface PetUpdateParams {
 }
 
 export namespace PetUpdateParams {
-  export interface Category {
-    id?: number;
-
-    name?: string;
-  }
-
   export interface Tag {
     id?: number;
 
@@ -323,6 +311,7 @@ export interface PetUploadImageParams {
 export declare namespace Pets {
   export {
     type APIResponse as APIResponse,
+    type Category as Category,
     type Pet as Pet,
     type PetFindByStatusResponse as PetFindByStatusResponse,
     type PetFindByTagsResponse as PetFindByTagsResponse,
