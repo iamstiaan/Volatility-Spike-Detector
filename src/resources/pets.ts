@@ -190,6 +190,12 @@ export interface APIResponse {
   type?: string;
 }
 
+export interface Category {
+  id?: number;
+
+  name?: string;
+}
+
 export interface Pet {
   name: string;
 
@@ -197,28 +203,20 @@ export interface Pet {
 
   id?: number;
 
-  category?: Pet.Category;
+  category?: Category;
 
   /**
    * pet status in the store
    */
   status?: 'available' | 'pending' | 'sold';
 
-  tags?: Array<Pet.Tag>;
+  tags?: Array<Tag>;
 }
 
-export namespace Pet {
-  export interface Category {
-    id?: number;
+export interface Tag {
+  id?: number;
 
-    name?: string;
-  }
-
-  export interface Tag {
-    id?: number;
-
-    name?: string;
-  }
+  name?: string;
 }
 
 export type PetFindByStatusResponse = Array<Pet>;
@@ -232,28 +230,14 @@ export interface PetCreateParams {
 
   id?: number;
 
-  category?: PetCreateParams.Category;
+  category?: Category;
 
   /**
    * pet status in the store
    */
   status?: 'available' | 'pending' | 'sold';
 
-  tags?: Array<PetCreateParams.Tag>;
-}
-
-export namespace PetCreateParams {
-  export interface Category {
-    id?: number;
-
-    name?: string;
-  }
-
-  export interface Tag {
-    id?: number;
-
-    name?: string;
-  }
+  tags?: Array<Tag>;
 }
 
 export interface PetUpdateParams {
@@ -263,28 +247,14 @@ export interface PetUpdateParams {
 
   id?: number;
 
-  category?: PetUpdateParams.Category;
+  category?: Category;
 
   /**
    * pet status in the store
    */
   status?: 'available' | 'pending' | 'sold';
 
-  tags?: Array<PetUpdateParams.Tag>;
-}
-
-export namespace PetUpdateParams {
-  export interface Category {
-    id?: number;
-
-    name?: string;
-  }
-
-  export interface Tag {
-    id?: number;
-
-    name?: string;
-  }
+  tags?: Array<Tag>;
 }
 
 export interface PetFindByStatusParams {
@@ -323,7 +293,9 @@ export interface PetUploadImageParams {
 export declare namespace Pets {
   export {
     type APIResponse as APIResponse,
+    type Category as Category,
     type Pet as Pet,
+    type Tag as Tag,
     type PetFindByStatusResponse as PetFindByStatusResponse,
     type PetFindByTagsResponse as PetFindByTagsResponse,
     type PetCreateParams as PetCreateParams,
