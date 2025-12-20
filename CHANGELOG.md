@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2025-12-20)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/iamstiaan/Volatility-Spike-Detector/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Features
+
+* **api:** manual updates ([3f2aec8](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/3f2aec856fc6882329494b4ebe409059bd1e9794))
+* **api:** manual updates ([57bb653](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/57bb653061cba79d0cbc3305f1d2fc62230d7f1e))
+
+
+### Chores
+
+* update SDK settings ([8598f01](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/8598f0182292a77144c22f5e2b3a8268bfd765ee))
+
 ## 0.1.0-alpha.2 (2025-12-18)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/iamstiaan/Volatility-Spike-Detector/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
