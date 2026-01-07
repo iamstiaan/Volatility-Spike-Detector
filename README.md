@@ -11,11 +11,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:iamstiaan/Volatility-Spike-Detector.git
+npm install whatsauto
 ```
-
-> [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install whatsauto`
 
 ## Usage
 
@@ -29,7 +26,11 @@ const client = new Petstore({
   apiKey: process.env['PETSTORE_API_KEY'], // This is the default and can be omitted
 });
 
-const order = await client.store.createOrder({ petId: 1, quantity: 1, status: 'placed' });
+const order = await client.store.createOrder({
+  petId: 1,
+  quantity: 1,
+  status: 'placed',
+});
 
 console.log(order.id);
 ```
