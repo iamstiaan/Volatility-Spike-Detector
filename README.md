@@ -26,7 +26,11 @@ const client = new Petstore({
   apiKey: process.env['PETSTORE_API_KEY'], // This is the default and can be omitted
 });
 
-const order = await client.store.createOrder({ petId: 1, quantity: 1, status: 'placed' });
+const order = await client.store.createOrder({
+  petId: 1,
+  quantity: 1,
+  status: 'placed',
+});
 
 console.log(order.id);
 ```
