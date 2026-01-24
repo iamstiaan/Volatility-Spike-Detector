@@ -9,7 +9,9 @@ Types:
 Types:
 
 - <code><a href="./src/resources/pets.ts">APIResponse</a></code>
+- <code><a href="./src/resources/pets.ts">Category</a></code>
 - <code><a href="./src/resources/pets.ts">Pet</a></code>
+- <code><a href="./src/resources/pets.ts">Tag</a></code>
 - <code><a href="./src/resources/pets.ts">PetFindByStatusResponse</a></code>
 - <code><a href="./src/resources/pets.ts">PetFindByTagsResponse</a></code>
 
