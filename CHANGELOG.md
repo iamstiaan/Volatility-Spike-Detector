@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.1.0-alpha.3 (2026-01-24)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-alpha.3](https://github.com/iamstiaan/Volatility-Spike-Detector/compare/v0.1.0-alpha.2...v0.1.0-alpha.3)
+
+### Features
+
+* **api:** manual updates ([3f2aec8](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/3f2aec856fc6882329494b4ebe409059bd1e9794))
+* **api:** manual updates ([57bb653](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/57bb653061cba79d0cbc3305f1d2fc62230d7f1e))
+
+
+### Chores
+
+* break long lines in snippets into multiline ([ca7fc38](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/ca7fc385f4a41c48f9c451caa86e473e726b1ac0))
+* **ci:** upgrade `actions/github-script` ([716923a](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/716923ae7928544f4312374398238fac867475a0))
+* **internal:** codegen related update ([e922c70](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/e922c703586a92a6bacdf86f90de7ae385c8c1e3))
+* **internal:** update `actions/checkout` version ([1f51914](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/1f51914c171e4d4777cedda0c7cf714b9d3d4431))
+* **internal:** upgrade babel, qs, js-yaml ([878052d](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/878052ded6f340fefdbaa15773a24a1f2703606c))
+* update SDK settings ([8598f01](https://github.com/iamstiaan/Volatility-Spike-Detector/commit/8598f0182292a77144c22f5e2b3a8268bfd765ee))
+
 ## 0.1.0-alpha.2 (2025-12-18)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/iamstiaan/Volatility-Spike-Detector/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
