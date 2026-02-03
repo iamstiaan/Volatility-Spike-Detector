@@ -8,6 +8,7 @@ import * as Uploads from './uploads';
 import * as API from './resources/index';
 import {
   APIResponse,
+  Category,
   Pet,
   PetCreateParams,
   PetFindByStatusParams,
@@ -18,6 +19,7 @@ import {
   PetUpdateParams,
   PetUploadImageParams,
   Pets,
+  Tag,
 } from './resources/pets';
 import {
   User,
@@ -207,7 +209,9 @@ export declare namespace Petstore {
   export {
     Pets as Pets,
     type APIResponse as APIResponse,
+    type Category as Category,
     type Pet as Pet,
+    type Tag as Tag,
     type PetFindByStatusResponse as PetFindByStatusResponse,
     type PetFindByTagsResponse as PetFindByTagsResponse,
     type PetCreateParams as PetCreateParams,
